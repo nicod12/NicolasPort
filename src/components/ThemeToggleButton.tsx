@@ -9,7 +9,7 @@ interface Props {
 const ThemeToggleButton: React.FC<Props> = ({ onToggle }) => {
   return (
     <Button
-       aria-label="Change"
+      aria-label="Change"
       onClick={onToggle}
       sx={{position: "absolute", top: "80px", right: "15px"}}
     >
