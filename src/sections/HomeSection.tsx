@@ -4,29 +4,29 @@ import { Button, Container, Typography } from "@mui/material"
 
 const HomeSection = () => {
   return (
-    <Container 
+    <Container
       sx={{marginTop: "40px", position:"relative"}}
       component="section"
     >
-       <Typography 
-         variant="h1" 
+       <Typography
+         variant="h1"
          component="h2"
         sx = {{
           textAlign: "center",
-          letterSpacing:"1px",
+          letterSpacing:"2px",
           fontWeight: "bold",
           color: "orange",
           fontSize: {
             xs: "25px",
             sm: "30px"
-          }
+          },
         }}
-      
+
        >
         FullStack Developer 💻
        </Typography>
 
-       <Typography 
+       <Typography
         variant="h2"
         component="p"
         sx={{
@@ -42,25 +42,28 @@ const HomeSection = () => {
             sm: "20px"
           },
           fontFamily: "poppins",
-      
+          letterSpacing:"2px"
+
         }}
        >
-          My name is Nicolás. I am a web developer 
+          My name is Nicolás. I am a web developer
           with 2 years of experience developing in
-          <Typography 
+          <Typography
             component="span"
             sx = {{
-              color: "#DA6512", 
-              fontWeight: "bold", 
+              color: "#DA6512",
+              fontWeight: "bold",
               fontSize: "20px",
               fontFamily: "poppins",
+              letterSpacing:"2px"
 
             }}
           > React</Typography> and <Typography component="span"    sx = {{
-            color: "#DA6512", 
-            fontWeight: "bold", 
+            color: "#DA6512",
+            fontWeight: "bold",
             fontSize: "20px",
             fontFamily: "poppins",
+            letterSpacing:"2px"
 
           }}>Node.js</Typography>
        </Typography>
@@ -69,7 +72,7 @@ const HomeSection = () => {
           display: "flex",
         }}
       >
-        <Button 
+        <Button
           aria-label="DownloadCv"
           variant="contained"
 
@@ -88,4 +91,4 @@ const HomeSection = () => {
   )
 }
 
-export default HomeSection
+export default HomeSection;

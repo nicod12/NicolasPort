@@ -4,6 +4,7 @@ import DrawerAppBar from './components/DrawerAppBar';
 import { darkTheme, lightTheme } from './utils/theme';
 import ThemeToggleButton from './components/ThemeToggleButton';
 import HomeSection from './sections/HomeSection';
+import ProjectSection from './sections/ProjectSection';
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <main>
         <ThemeToggleButton onToggle={handleToggleTheme} />
         <HomeSection />
+        <ProjectSection />
       </main>
     </ThemeProvider>
   );
