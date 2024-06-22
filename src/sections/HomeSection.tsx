@@ -1,11 +1,11 @@
-import { Button, Container, Typography } from "@mui/material"
+import { Box, Button, Typography } from "@mui/material"
 
 
 
 const HomeSection = () => {
   return (
-    <Container
-      sx={{marginTop: "40px", position:"relative"}}
+    <Box
+      sx={{marginTop: "50px", position:"relative"}}
       component="section"
     >
        <Typography
@@ -67,7 +67,8 @@ const HomeSection = () => {
 
           }}>Node.js</Typography>
        </Typography>
-      <Container
+      <Box
+        component="section"
         sx={{
           display: "flex",
         }}
@@ -86,8 +87,8 @@ const HomeSection = () => {
         >
           View CV
         </Button>
-      </Container>
-    </Container>
+      </Box>
+    </Box>
   )
 }
 

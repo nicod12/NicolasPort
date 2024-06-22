@@ -1,4 +1,4 @@
-import { Container, Typography } from "@mui/material"
+import { Box, Typography } from "@mui/material"
 import ButtonBaseDemo from "../components/Projects";
 
 
@@ -6,7 +6,8 @@ import ButtonBaseDemo from "../components/Projects";
 
 const ProjectSection = () => {
   return (
-    <Container
+    <Box
+    component="section"
     sx={{
       paddingY: "40px"
     }}
@@ -16,10 +17,10 @@ const ProjectSection = () => {
          component="h2"
          sx={{
           textAlign: "center",
-          marginTop: "50px",
+          marginTop: "80px",
           fontSize: {
-            xs: "20px",
-            sm: "25px"
+            xs: "15px",
+            sm: "20px"
           },
           fontWeight: "bold",
           fontFamily: "poppins",
@@ -32,7 +33,7 @@ const ProjectSection = () => {
         </Typography>
 
         <ButtonBaseDemo />
-    </Container>
+    </Box>
   )
 }
 

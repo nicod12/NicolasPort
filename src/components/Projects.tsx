@@ -5,18 +5,18 @@ import Typography from '@mui/material/Typography';
 
 const images = [
   {
-    url: '/static/images/buttons/breakfast.jpg',
-    title: 'Breakfast',
+    url: 'https://i.postimg.cc/8kwFNRhK/digital.webp',
+    title: 'Digital App',
     width: '40%',
   },
   {
-    url: '/static/images/buttons/burgers.jpg',
-    title: 'Burgers',
+    url: 'https://i.postimg.cc/JzSMRn6d/auth.png',
+    title: 'Auth App',
     width: '30%',
   },
   {
-    url: '/static/images/buttons/camera.jpg',
-    title: 'Camera',
+    url: 'https://i.postimg.cc/mgv8LfQS/api.webp',
+    title: 'Api',
     width: '30%',
   },
 ];
@@ -49,7 +49,8 @@ const ImageSrc = styled('span')({
   top: 0,
   bottom: 0,
   backgroundSize: 'cover',
-  backgroundPosition: 'center 40%',
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: 'center 10%',
 });
 
 const Image = styled('span')(({ theme }) => ({
@@ -87,9 +88,10 @@ const ImageMarked = styled('span')(({ theme }) => ({
 
 export default function ButtonBaseDemo() {
   return (
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%', paddingX: {xs: 0, sm:"20px"}, marginTop: "25px", gap:{xs:"5px",sm: 0}}}>
+    <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%', paddingX: {xs: 0, sm:"20px"}, marginTop: "40px", gap:{xs:"5px",sm: 0}}}>
       {images.map((image) => (
         <ImageButton
+          aria-label='Dem'
           focusRipple
           key={image.title}
           style={{

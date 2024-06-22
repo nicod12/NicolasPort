@@ -5,6 +5,7 @@ import { darkTheme, lightTheme } from './utils/theme';
 import ThemeToggleButton from './components/ThemeToggleButton';
 import HomeSection from './sections/HomeSection';
 import ProjectSection from './sections/ProjectSection';
+import SkillSection from './sections/SkillSection';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <ThemeToggleButton onToggle={handleToggleTheme} />
         <HomeSection />
         <ProjectSection />
+        <SkillSection />
       </main>
     </ThemeProvider>
   );
