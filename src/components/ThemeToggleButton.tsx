@@ -9,10 +9,9 @@ interface Props {
 const ThemeToggleButton: React.FC<Props> = ({ onToggle }) => {
   return (
     <Button
-      variant="contained"
-      color="primary"
+       aria-label="Change"
       onClick={onToggle}
-      sx={{position: "absolute", top: "80px", right: "15px",borderRadius: "20px",padding: "4px 2px " }}
+      sx={{position: "absolute", top: "80px", right: "15px"}}
     >
       <Brightness6Icon />
     </Button>
