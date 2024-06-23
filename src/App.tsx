@@ -8,6 +8,7 @@ import ProjectSection from './sections/ProjectSection';
 import SkillSection from './sections/SkillSection';
 import AboutSection from './sections/AboutSection';
 import ContactSection from './sections/ContactSection';
+import FooterSection from './sections/FooterSection';
 
 
 
@@ -29,6 +30,7 @@ function App() {
         <SkillSection />
         <AboutSection />
         <ContactSection />
+        <FooterSection />
       </main>
     </ThemeProvider>
   );

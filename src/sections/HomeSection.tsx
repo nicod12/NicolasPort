@@ -13,7 +13,7 @@ const HomeSection = () => {
          component="h2"
         sx = {{
           textAlign: "center",
-          letterSpacing:"2px",
+          letterSpacing:"3px",
           fontWeight: "bold",
           color: "orange",
           fontSize: {
@@ -39,7 +39,7 @@ const HomeSection = () => {
             sm: "20px"
           },
           fontFamily: "poppins",
-          letterSpacing:"2px"
+          letterSpacing:"0.5px"
 
         }}
        >
@@ -52,7 +52,7 @@ const HomeSection = () => {
               fontWeight: "bold",
               fontSize: "20px",
               fontFamily: "poppins",
-              letterSpacing:"2px"
+              letterSpacing:"0.5px"
 
             }}
           > React</Typography> and <Typography component="span"    sx = {{
@@ -60,7 +60,7 @@ const HomeSection = () => {
             fontWeight: "bold",
             fontSize: "20px",
             fontFamily: "poppins",
-            letterSpacing:"2px"
+            letterSpacing:"0.5px"
 
           }}>Node.js</Typography>
        </Typography>

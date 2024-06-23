@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material"
+import AddLocationRoundedIcon from '@mui/icons-material/AddLocationRounded';
 
 
 const AboutSection = () => {
@@ -35,14 +36,11 @@ const AboutSection = () => {
           paddingX:"50px",
           paddingY:"10px",
           letterSpacing: "0.5px",
-          textAlign:{
-            xs: "center",
-            sm: "start"
-          },
-          fontFamily: "poppins"
+          textAlign: "center",
+
         }}
       >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis hic, quidem rerum sequi voluptas ex numquam consequuntur minus sit, dignissimos commodi. Molestias, pariatur nostrum! Tempore numquam impedit consequatur suscipit quidem.
+      <AddLocationRoundedIcon sx={{color: "#EA4335", fontSize: "20px"}} /> I am from Olavarría, Buenos Aires, Argentina.
       </Typography>
     </Box>
   )
