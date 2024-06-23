@@ -29,7 +29,7 @@ const SkillSection = () => {
          Skills
         </Typography>
         <Box
-        component="section"
+        component="ul"
         sx={{
           display: "grid",
           gridTemplateColumns: {

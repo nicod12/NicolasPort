@@ -3,6 +3,9 @@ import { Box, Button, Typography } from "@mui/material"
 
 
 const HomeSection = () => {
+  const handleDownloadClick = () => {
+    window.open('https://drive.google.com/file/d/1q3hzmxstlZafI4P271H-Pu5znjAtKRrg/view?usp=drive_link', '_blank');
+  };
   return (
     <Box
       sx={{marginTop: "50px", position:"relative", paddingY: "20px"}}
@@ -73,7 +76,7 @@ const HomeSection = () => {
         <Button
           aria-label="DownloadCv"
           variant="contained"
-
+          onClick={handleDownloadClick}
           sx={{
             paddingX: "2px 3px",
             background:"#1287DA",
