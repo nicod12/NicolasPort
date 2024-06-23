@@ -6,6 +6,8 @@ import ThemeToggleButton from './components/ThemeToggleButton';
 import HomeSection from './sections/HomeSection';
 import ProjectSection from './sections/ProjectSection';
 import SkillSection from './sections/SkillSection';
+import AboutSection from './sections/AboutSection';
+import ContactSection from './sections/ContactSection';
 
 
 
@@ -25,6 +27,8 @@ function App() {
         <HomeSection />
         <ProjectSection />
         <SkillSection />
+        <AboutSection />
+        <ContactSection />
       </main>
     </ThemeProvider>
   );

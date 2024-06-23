@@ -5,7 +5,7 @@ import { Box, Button, Typography } from "@mui/material"
 const HomeSection = () => {
   return (
     <Box
-      sx={{marginTop: "50px", position:"relative"}}
+      sx={{marginTop: "50px", position:"relative", paddingY: "20px"}}
       component="section"
     >
        <Typography
@@ -31,10 +31,7 @@ const HomeSection = () => {
         component="p"
         sx={{
           fontSize: "20px",
-          textAlign: {
-            xs: "center",
-            sm: "start"
-          },
+          textAlign: "center",
           marginTop: "20px",
           paddingY: "10px",
           paddingX: {

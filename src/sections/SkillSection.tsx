@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material"
 
-const skills = ["Html","Css","Javascript","Typescript","NextJs","Tailwind","NodeJs","MongoDB","MySQL","Express","Linux","Git"];
+const skills = ["Html","Css","Javascript","Typescript","React","NextJs","Tailwind","NodeJs","MongoDB","MySQL","Express","Linux","Git"];
 
 
 const SkillSection = () => {
