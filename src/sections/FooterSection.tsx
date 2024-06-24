@@ -24,7 +24,6 @@ const FooterSection = () => {
         component="div"
         sx={{
           paddingY: "10px",
-          borderTop: "1px solid",
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',

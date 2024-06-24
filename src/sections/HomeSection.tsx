@@ -10,6 +10,7 @@ const HomeSection = () => {
     <Box
       sx={{marginTop: "50px", position:"relative", paddingY: "20px"}}
       component="section"
+      id="home"
     >
        <Typography
          variant="h1"

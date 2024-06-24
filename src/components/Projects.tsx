@@ -88,7 +88,7 @@ const ImageMarked = styled('span')(({ theme }) => ({
 
 export default function ButtonBaseDemo() {
   return (
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%', paddingX: {xs: 0, sm:"20px"}, marginTop: "40px", gap:{xs:"5px",sm: 0}}}>
+    <Box id="projects"  sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%', paddingX: {xs: 0, sm:"20px"}, marginTop: "40px", gap:{xs:"5px",sm: 0}}}>
       {images.map((image) => (
         <ImageButton
           aria-label='Dem'

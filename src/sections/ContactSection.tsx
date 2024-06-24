@@ -8,7 +8,6 @@ const ContactSection = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const [open, setOpen] = useState(false);
 
-
   const handleCopy = () => {
     const inputValue = inputRef.current?.value;
     if (inputValue !== undefined) {
@@ -20,64 +19,64 @@ const ContactSection = () => {
     }
   }
 
-  const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
+  const handleClose = (reason?: string) => {
     if (reason === 'clickaway') {
       return;
     }
     setOpen(false);
   };
 
-
   return (
-   <Box
-    component="section"
-    sx={{
-      paddingY: "20px"
-    }}
-   >
-    <Typography
-      sx={{
-        textAlign: "center",
-        marginTop: "40px",
-        fontSize: {
-          xs: "15px",
-          sm: "20px"
-        },
-        fontWeight: "bold",
-        fontFamily: "poppins",
-        letterSpacing: "2px",
-        color: "#DA6512",
-        textTransform: "uppercase",
-      }}
-    >
-      Contact
-    </Typography>
     <Box
       component="section"
+      id="contact"
       sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
         paddingY: "20px"
       }}
     >
-      <Input
-        value="nicodume45@gmail.com"
-        readOnly
-        sx={{ paddingX: '4px' }}
-        inputRef={inputRef}
-      />
-      <Button aria-label="copy" onClick={handleCopy}>
-        <ContentCopyRoundedIcon />
-      </Button>
-      <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
-        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-          Text copied to clipboard
-        </Alert>
-      </Snackbar>
+      <Typography
+        sx={{
+          textAlign: "center",
+          marginTop: "40px",
+          fontSize: {
+            xs: "15px",
+            sm: "20px"
+          },
+          fontWeight: "bold",
+          fontFamily: "poppins",
+          letterSpacing: "2px",
+          color: "#DA6512",
+          textTransform: "uppercase",
+        }}
+      >
+        Contact
+      </Typography>
+      <Box
+        component="section"
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          paddingY: "20px"
+        }}
+      >
+        <Input
+          value="nicodume45@gmail.com"
+          readOnly
+          sx={{ paddingX: '4px' }}
+          inputRef={inputRef}
+        />
+        <Button aria-label="copy" onClick={handleCopy}>
+          <ContentCopyRoundedIcon />
+        </Button>
+        <Snackbar open={open} autoHideDuration={3000} onClose={() => handleClose()}>
+          <Alert onClose={() => handleClose()} severity="success" sx={{ width: '100%' }}>
+            Text copied to clipboard
+          </Alert>
+        </Snackbar>
+      </Box>
     </Box>
-   </Box>
-  )
+  );
 }
 
-export default ContactSection
+export default ContactSection;

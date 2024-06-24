@@ -6,7 +6,7 @@ import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
+
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -33,19 +33,24 @@ export default function DrawerAppBar(props: Props) {
     setMobileOpen((prevState) => !prevState);
   };
 
+  const handleNavItemClick = (item: string) => {
+
+    const element = document.getElementById(item.toLowerCase());
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    <Box sx={{ width: drawerWidth, textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
         NAD
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} sx={{textTransform: "uppercase"}} />
-            </ListItemButton>
-          </ListItem>
+          <ListItemButton key={item} onClick={() => handleNavItemClick(item)}>
+            <ListItemText primary={item} sx={{ textTransform: 'uppercase' }} />
+          </ListItemButton>
         ))}
       </List>
     </Box>
@@ -76,7 +81,7 @@ export default function DrawerAppBar(props: Props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff', textTransform: "uppercase", }}>
+              <Button key={item} sx={{ color: '#fff', textTransform: "uppercase", }} onClick={() => handleNavItemClick(item)}>
                 {item}
               </Button>
             ))}

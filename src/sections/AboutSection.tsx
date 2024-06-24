@@ -37,11 +37,25 @@ const AboutSection = () => {
           paddingY:"10px",
           letterSpacing: "0.5px",
           textAlign: "center",
+          fontFamily: "poppins"
 
         }}
       >
       <AddLocationRoundedIcon sx={{color: "#EA4335", fontSize: "20px"}} /> I am from Olavarría, Buenos Aires, Argentina.
       </Typography>
+      <Box
+        component="p"
+        sx={{
+          fontSize: "20px",
+          paddingX:"50px",
+          paddingY:"10px",
+          letterSpacing: "0.5px",
+          textAlign: "center",
+          fontFamily: "poppins"
+        }}
+      >
+       In my free time, I like reading books, spending time with my family and friends, traveling, and practicing martial arts.
+      </Box>
     </Box>
   )
 }
