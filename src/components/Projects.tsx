@@ -8,16 +8,19 @@ const images = [
     url: 'https://i.postimg.cc/8kwFNRhK/digital.webp',
     title: 'Digital App',
     width: '40%',
+    link: 'https://agencia-digital-app.vercel.app/',
   },
   {
     url: 'https://i.postimg.cc/JzSMRn6d/auth.png',
     title: 'Auth App',
     width: '30%',
+    link: 'https://multitasker-app.vercel.app/',
   },
   {
     url: 'https://i.postimg.cc/mgv8LfQS/api.webp',
     title: 'Api',
     width: '30%',
+    link: 'https://github.com/nicod12/api-register-bun',
   },
 ];
 
@@ -87,6 +90,9 @@ const ImageMarked = styled('span')(({ theme }) => ({
 }));
 
 export default function ButtonBaseDemo() {
+  const handleImageClick = (link:string) => {
+    window.open(link, '_blank');
+  };
   return (
     <Box id="projects"  sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%', paddingX: {xs: 0, sm:"20px"}, marginTop: "40px", gap:{xs:"5px",sm: 0}}}>
       {images.map((image) => (
@@ -94,11 +100,12 @@ export default function ButtonBaseDemo() {
           aria-label='Dem'
           focusRipple
           key={image.title}
+          onClick={() => handleImageClick(image.link)}
           style={{
             width: image.width,
           }}
         >
-          <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+          <ImageSrc  style={{ backgroundImage: `url(${image.url})` }} />
           <ImageBackdrop className="MuiImageBackdrop-root" />
           <Image>
             <Typography
