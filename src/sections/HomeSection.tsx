@@ -4,7 +4,7 @@ import { Box, Button, Typography } from "@mui/material"
 
 const HomeSection = () => {
   const handleDownloadClick = () => {
-    window.open('https://drive.google.com/file/d/1q3hzmxstlZafI4P271H-Pu5znjAtKRrg/view?usp=drive_link', '_blank');
+    window.open('https://drive.google.com/file/d/1cwWLjdYrFLN4CSV2k3x16xlt9zMKQpsT/view', '_blank');
   };
   return (
     <Box
