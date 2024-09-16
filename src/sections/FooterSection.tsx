@@ -27,40 +27,41 @@ const FooterSection = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          marginTop: "20px"
+          marginTop: "20px",
         }}
       >
-      <Button
-        onClick={handleGitHubClick}
-        aria-label="github"
-      >
-        <GitHubIcon/>
-      </Button>
-      <Button
-       onClick={handleLinkedInClick}
-       aria-label="linkedin"
-      >
-        <LinkedInIcon />
-      </Button>
-      <Button
-        onClick={handleYouTubeClick}
-        aria-label="youtube"
-      >
-        <YouTubeIcon / >
-      </Button>
+        <Button
+          onClick={handleGitHubClick}
+          aria-label="github"
+        >
+          <GitHubIcon />
+        </Button>
+        <Button
+          onClick={handleLinkedInClick}
+          aria-label="linkedin"
+        >
+          <LinkedInIcon />
+        </Button>
+        <Button
+          onClick={handleYouTubeClick}
+          aria-label="youtube"
+        >
+          <YouTubeIcon />
+        </Button>
       </Box>
       <Box
         component="p"
         sx={{
           textAlign: "center",
-          paddingY: "5px",
+          paddingTop: "10px",
+          paddingBottom: '20px',
           fontSize: "20px"
         }}
       >
-        Developed by: <Typography component="span" color="orange" sx={{fontSize:"20px"}}>@nsensedev</Typography>
+        Developed by: <Typography component="span" color="orange" sx={{ fontSize: "20px" }}>@nsensedev</Typography>
       </Box>
     </Box>
   )
- }
+}
 
 export default FooterSection

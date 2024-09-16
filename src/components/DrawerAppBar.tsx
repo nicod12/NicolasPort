@@ -43,7 +43,7 @@ export default function DrawerAppBar(props: Props) {
   const drawer = (
     <Box sx={{ width: drawerWidth, textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        NAD
+        {`</Ndev>`}
       </Typography>
       <Divider />
       <List>
@@ -61,7 +61,15 @@ export default function DrawerAppBar(props: Props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar component="nav" sx={{
+        paddingX: '25rem',
+        '@media (max-width: 900px)': {
+          paddingX: '0'
+        },
+        '@media (max-width: 600px)': {
+          paddingX: '0'
+        }
+      }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -77,7 +85,7 @@ export default function DrawerAppBar(props: Props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            NAD
+            {`</Ndev>`}
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
