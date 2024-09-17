@@ -7,15 +7,15 @@ import ButtonBaseDemo from "../components/Projects";
 const ProjectSection = () => {
   return (
     <Box
-    component="section"
-    sx={{
-      paddingY: "40px"
-    }}
+      component="section"
+      sx={{
+        paddingY: "40px"
+      }}
     >
-        <Typography
-         variant="h2"
-         component="h2"
-         sx={{
+      <Typography
+        variant="h2"
+        component="h2"
+        sx={{
           textAlign: "center",
           marginTop: "80px",
           fontSize: {
@@ -27,12 +27,12 @@ const ProjectSection = () => {
           letterSpacing: "2px",
           color: "#DA6512",
           textTransform: "uppercase"
-         }}
-        >
-         Projects
-        </Typography>
+        }}
+      >
+        Projects
+      </Typography>
 
-        <ButtonBaseDemo />
+      <ButtonBaseDemo />
     </Box>
   )
 }

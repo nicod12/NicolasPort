@@ -63,8 +63,8 @@ export default function DrawerAppBar(props: Props) {
       <CssBaseline />
       <AppBar component="nav" sx={{
         paddingX: '25rem',
-        '@media (max-width: 900px)': {
-          paddingX: '0'
+        '@media (max-width: 1023px)': {
+          paddingX: '6rem'
         },
         '@media (max-width: 600px)': {
           paddingX: '0'
